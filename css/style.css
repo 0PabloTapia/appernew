@@ -52,6 +52,22 @@ h2.section-title-heading {
     font-size: 1.8rem;
 }
 
+.section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var(--main-accident-color);
+    width: 8%;
+    top: 80px;
+}
+
+.section-title:hover::after {
+    width: 12%;
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+}
+
 /* Navegacion */
 
 .navbar {
@@ -110,7 +126,8 @@ h2.section-title-heading {
 
 .image-box img {
     position: absolute;
-    top: 2rem;
+    top: 7rem;
+    z-index: 1;
 }
 
 /* Acerca de */
@@ -118,4 +135,132 @@ h2.section-title-heading {
 #about i {
     color: var(--main-accident-color)
 }
+
+#about h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#about p {
+    color: var(--body-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#about {
+    position: relative;
+    padding-bottom: 8rem;
+}
+
+#about::after {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 15%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+}
+
+/* caracteristicas */
+
+#caracteristicas {
+    background-color: #fafafa;
+    padding-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+#caracteristicas img {
+    display: block;
+    margin: 0 auto;
+}
+
+#caracteristicas .feature-block {
+    text-align: center;
+}
+
+#features .feature-block h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#caracteristicas .feature-block img {
+    padding-bottom: 1rem;
+}
+
+#caracteristicas .feature-block p {
+    color: var(--body-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* Descarga */
+
+#descargas {
+    background-image: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52)), url('../img/download.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+    position: relative;
+}
+
+#descargas::before {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 20%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -6rem;
+    right: 0;
+    left: 0;
+}
+
+#descargas .download-title h2 {
+    padding-top: 10rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#descargas .download-title p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 2.5rem;
+}
+
+#descargas .download-title .download-btns {
+    margin-top: 4rem;
+}
+
+#descargas .download-title .download-btns a {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+
+#descargas .download-title .download-btns a:hover {
+    background-color: #ffffff;
+    color: var(--main-accident-color);
+    border: 2px solid #ffffff;
+    text-decoration: none;
+}
+
+
+
+
 
